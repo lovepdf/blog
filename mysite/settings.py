@@ -125,3 +125,11 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
+
+LOGIN_REDIRECT_URL = '/'
+
+# TEMPLATE_DIRS
+TEMPLATE_DIRS = (
+    os.path.join(BASE_DIR, 'mysite/../blog/templates'),
+    os.path.join(BASE_DIR, 'blog/templates'),
+)
